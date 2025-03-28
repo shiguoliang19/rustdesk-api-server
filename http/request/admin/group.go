@@ -1,6 +1,6 @@
 package admin
 
-import "github.com/lejianwen/rustdesk-api/v2/model"
+import "github.com/shiguoliang19/rustdesk-api-server/model"
 
 type GroupForm struct {
 	Id   uint   `json:"id"`

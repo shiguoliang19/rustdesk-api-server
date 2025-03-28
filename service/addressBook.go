@@ -3,7 +3,7 @@ package service
 import (
 	"encoding/json"
 	"github.com/google/uuid"
-	"github.com/lejianwen/rustdesk-api/v2/model"
+	"github.com/shiguoliang19/rustdesk-api-server/model"
 	"gorm.io/gorm"
 	"strings"
 )

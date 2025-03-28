@@ -2,12 +2,12 @@ package admin
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/lejianwen/rustdesk-api/v2/global"
-	"github.com/lejianwen/rustdesk-api/v2/http/request/admin"
-	"github.com/lejianwen/rustdesk-api/v2/http/response"
-	adResp "github.com/lejianwen/rustdesk-api/v2/http/response/admin"
-	"github.com/lejianwen/rustdesk-api/v2/model"
-	"github.com/lejianwen/rustdesk-api/v2/service"
+	"github.com/shiguoliang19/rustdesk-api-server/global"
+	"github.com/shiguoliang19/rustdesk-api-server/http/request/admin"
+	"github.com/shiguoliang19/rustdesk-api-server/http/response"
+	adResp "github.com/shiguoliang19/rustdesk-api-server/http/response/admin"
+	"github.com/shiguoliang19/rustdesk-api-server/model"
+	"github.com/shiguoliang19/rustdesk-api-server/service"
 	"gorm.io/gorm"
 	"strconv"
 )

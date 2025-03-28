@@ -2,10 +2,10 @@ package api
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/lejianwen/rustdesk-api/v2/global"
-	"github.com/lejianwen/rustdesk-api/v2/http/response"
-	"github.com/lejianwen/rustdesk-api/v2/http/response/api"
-	"github.com/lejianwen/rustdesk-api/v2/service"
+	"github.com/shiguoliang19/rustdesk-api-server/global"
+	"github.com/shiguoliang19/rustdesk-api-server/http/response"
+	"github.com/shiguoliang19/rustdesk-api-server/http/response/api"
+	"github.com/shiguoliang19/rustdesk-api-server/service"
 	"time"
 )
 

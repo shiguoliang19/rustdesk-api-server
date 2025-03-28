@@ -2,8 +2,8 @@ package api
 
 import (
 	"encoding/json"
-	"github.com/lejianwen/rustdesk-api/v2/global"
-	"github.com/lejianwen/rustdesk-api/v2/model"
+	"github.com/shiguoliang19/rustdesk-api-server/global"
+	"github.com/shiguoliang19/rustdesk-api-server/model"
 	"strconv"
 )
 

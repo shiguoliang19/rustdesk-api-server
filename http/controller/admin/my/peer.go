@@ -2,9 +2,9 @@ package my
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/lejianwen/rustdesk-api/v2/http/request/admin"
-	"github.com/lejianwen/rustdesk-api/v2/http/response"
-	"github.com/lejianwen/rustdesk-api/v2/service"
+	"github.com/shiguoliang19/rustdesk-api-server/http/request/admin"
+	"github.com/shiguoliang19/rustdesk-api-server/http/response"
+	"github.com/shiguoliang19/rustdesk-api-server/service"
 	"gorm.io/gorm"
 	"time"
 )

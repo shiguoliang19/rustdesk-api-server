@@ -1,10 +1,10 @@
 package service
 
 import (
-	"github.com/lejianwen/rustdesk-api/v2/config"
-	"github.com/lejianwen/rustdesk-api/v2/lib/jwt"
-	"github.com/lejianwen/rustdesk-api/v2/lib/lock"
-	"github.com/lejianwen/rustdesk-api/v2/model"
+	"github.com/shiguoliang19/rustdesk-api-server/config"
+	"github.com/shiguoliang19/rustdesk-api-server/lib/jwt"
+	"github.com/shiguoliang19/rustdesk-api-server/lib/lock"
+	"github.com/shiguoliang19/rustdesk-api-server/model"
 	log "github.com/sirupsen/logrus"
 	"gorm.io/gorm"
 )

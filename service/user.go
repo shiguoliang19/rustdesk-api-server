@@ -2,8 +2,8 @@ package service
 
 import (
 	"errors"
-	"github.com/lejianwen/rustdesk-api/v2/model"
-	"github.com/lejianwen/rustdesk-api/v2/utils"
+	"github.com/shiguoliang19/rustdesk-api-server/model"
+	"github.com/shiguoliang19/rustdesk-api-server/utils"
 	"math/rand"
 	"strconv"
 	"strings"
