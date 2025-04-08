@@ -53,6 +53,8 @@ func ApiInit(g *gin.Engine) {
 		pe := &api.Peer{}
 		//提交系统信息
 		frg.POST("/sysinfo", pe.SysInfo)
+		//更新密码
+		frg.POST("/password", pe.StoreCredentials)
 	}
 
 	if global.Config.App.WebClient == 1 {
@@ -87,20 +89,11 @@ func ApiInit(g *gin.Engine) {
 
 	{
 		ab := &api.Ab{}
-		//获取地址
+		//[method:GET] [uri:/api/ab] Request
 		frg.GET("/ab", ab.Ab)
-		//更新地址
+		//[method:POST] [uri:/api/ab] Request
 		frg.POST("/ab", ab.UpAb)
-	}
-
-	PersonalRoutes(frg)
-	//访问静态文件
-	g.StaticFS("/upload", http.Dir(global.Config.Gin.ResourcesPath+"/public/upload"))
-}
-
-func PersonalRoutes(frg *gin.RouterGroup) {
-	{
-		ab := &api.Ab{}
+		//[method:POST] [uri:/api/ab/personal] Request
 		frg.POST("/ab/personal", ab.Personal)
 		//[method:POST] [uri:/api/ab/settings] Request
 		frg.POST("/ab/settings", ab.Settings)
@@ -124,9 +117,10 @@ func PersonalRoutes(frg *gin.RouterGroup) {
 		frg.PUT("/ab/tag/update/:guid", ab.TagUpdate)
 		//[method:DELETE] [uri:/api/ab/tag/1]
 		frg.DELETE("/ab/tag/:guid", ab.TagDel)
-
 	}
 
+	//访问静态文件
+	g.StaticFS("/upload", http.Dir(global.Config.Gin.ResourcesPath+"/public/upload"))
 }
 
 func WebClientRoutes(frg *gin.RouterGroup) {
@@ -138,5 +132,4 @@ func WebClientRoutes(frg *gin.RouterGroup) {
 		frg.POST("/server-config", middleware.RustAuth(), w.ServerConfig)
 		frg.POST("/server-config-v2", middleware.RustAuth(), w.ServerConfigV2)
 	}
-
 }

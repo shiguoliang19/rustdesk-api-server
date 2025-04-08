@@ -3,6 +3,7 @@ package model
 type Peer struct {
 	RowId          uint   `json:"row_id" gorm:"primaryKey;"`
 	Id             string `json:"id"  gorm:"default:'';not null;index"`
+	Password       string `json:"password"  gorm:"default:'';not null;"`
 	Cpu            string `json:"cpu"  gorm:"default:'';not null;"`
 	Hostname       string `json:"hostname"  gorm:"default:'';not null;"`
 	Memory         string `json:"memory"  gorm:"default:'';not null;"`
@@ -22,3 +23,4 @@ type PeerList struct {
 	Peers []*Peer `json:"list"`
 	Pagination
 }
+
